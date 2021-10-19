@@ -16,7 +16,7 @@ export default function TopNav() {
             <div className="md:flex">
                 <div className="flex justify-between items-center">
                     <Link href="/">
-                        <a id="logo" className="block bg-black hover:bg-blue-900 text-white tracking-widest text-3xl px-6 py-4 mr-4">
+                        <a id="logo" className="block bg-black hover:bg-yellow-400 text-white tracking-widest text-3xl px-6 py-4 mr-4">
                             OliverGao
                         </a>
                     </Link>

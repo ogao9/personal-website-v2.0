@@ -1,7 +1,9 @@
 import Image from "next/image"
 import MetaHead from "../../components/MetaHead"
 import ProjectCard from "../../components/ProjectCard"
-export default function Projects() {
+import { getAllProjects } from "../../lib/sanity"
+
+export default function Projects({projectInfo}) {
     return (
         <>
             <MetaHead title="Oliver Gao | Projects" description="A small collection of my projects"/>
@@ -30,13 +32,12 @@ function ProjectCardGrid({projectInfo}){
     )
 }
 
-const projectInfo = [
-    {title: "Design.io",
-    excerpt: "This is some filler text",
-    slug: "design-io"
-    },
-    {title: "Design.io",
-    excerpt: "This is some filler text",
-    slug: "design-io"
-    },
-]
+export async function getStaticProps(){
+    const projectInfo = await getAllProjects();
+
+    return{
+        props:{
+            projectInfo
+        }
+    }
+}

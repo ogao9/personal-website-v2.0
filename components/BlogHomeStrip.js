@@ -1,10 +1,10 @@
 import { urlFor } from "../lib/sanity"
-import {prettyDate, getReadingTime} from '../lib/utlities'
+import { prettyDate, getReadingTime } from "../lib/utilities"
 
 export default function BlogHomeStrip({postInfo}){
 
     return(
-        <div className="w-full flex justify-between items-center mb-8">
+        <div className="flex items-center mb-8">
             <div className="flex-initial">
                 <h1 className="text-lg sm:text-2xl font-bold">{postInfo.title}</h1>
                 <h3 className="text-sm sm:text-base">{postInfo.excerpt}</h3>

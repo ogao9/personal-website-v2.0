@@ -1,9 +1,8 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { useState } from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt, faInfoCircle} from '@fortawesome/free-solid-svg-icons'
+import { urlFor } from '../lib/sanity';
+
 
 export default function ProjectCard({projectInfo}) {
     const router = useRouter()
@@ -12,7 +11,7 @@ export default function ProjectCard({projectInfo}) {
         <article className="project-card rounded border shadow-md hover:shadow-lg dark:bg-black-surface dark:border-black-surface">
             <section className="relative mb-3 overflow-hidden">
                 <img
-                    src="/big-house-oliver.png"
+                    src={urlFor(projectInfo.image).url()}
                     alt="Project Cover Photo"
                     className="object-cover"
                 />
