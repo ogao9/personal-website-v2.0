@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { useState } from 'react'
-import useWindowDimensions from './useWindowDimesions';
+import { useRouter } from 'next/router'
+import Link from 'next/link';
 import ThemeToggler from './ThemeToggler';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,15 +8,15 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function TopNav() {
+    const router = useRouter()
     const[open, setOpen] = useState(false);
-    const {width, height} = useWindowDimensions();
 
     return (
         <nav className="md:flex justify-between items-center">
-            <div className="md:flex">
+            <div className="md:flex items-center">
                 <div className="flex justify-between items-center">
                     <Link href="/">
-                        <a id="logo" className="block bg-black hover:bg-yellow-400 text-white tracking-widest text-3xl px-6 py-4 mr-4">
+                        <a id="logo" className="block bg-black hover:bg-m-blue text-white tracking-widest text-3xl px-6 py-4 mr-4">
                             OliverGao
                         </a>
                     </Link>
@@ -30,25 +30,22 @@ export default function TopNav() {
                     </div>
                 </div>
 
-                
-                <>
-                    <Link href="/projects">
-                    <a className="block px-8 py-4 text-center text-lg">
-                        Projects
+
+                <Link href="/projects">
+                <a className={`top-nav-link ${!open ? 'nav-link-hide' : ''} ${router.pathname.startsWith('/projects') ? "activeLink" : "" }`}>
+                    Projects
+                </a>
+                </Link>
+                <Link href="/about">
+                    <a className={`top-nav-link ${!open ? 'nav-link-hide' : ''} ${router.pathname === '/about' ? "activeLink" : "" } `}>
+                        About
                     </a>
-                    </Link>
-                    <Link href="/about">
-                        <a className="block px-8 py-4 text-center text-lg">
-                            About
-                        </a>
-                    </Link>
-                    <Link href="/blog">
-                        <a className="block px-8 py-4 text-center text-lg">
-                            Blog
-                        </a>
-                    </Link>
-                </>
-                
+                </Link>
+                <Link href="/blog">
+                    <a className={`top-nav-link ${!open ? 'nav-link-hide' : ''} ${router.pathname.startsWith('/blog') ? "activeLink" : "" } `}>
+                        Blog
+                    </a>
+                </Link>
             </div>
 
             <div className="hidden p-6 px-8 md:block">

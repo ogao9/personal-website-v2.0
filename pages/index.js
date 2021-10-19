@@ -10,8 +10,8 @@ export default function Home({homeData}) {
 		<>
 			<MetaHead title="Oliver Gao | Home" description="Write a good description here"/>
 
-			<main className="pl-12 lg:pl-48 pt-24">
-				<h1 className="text-7xl font-semibold mb-20">
+			<main className="px-8 md:pl-16 lg:pl-48 pt-24">
+				<h1 className="text-7xl font-semibold mb-16 sm:mb-20">
 					{homeData.headline}
 				</h1>
 
@@ -19,17 +19,17 @@ export default function Home({homeData}) {
 					{homeData.subheadline}
 				</h3>
 
-				<div className="flex justify-between w-96 mt-20 text-lg text-gray-700">
+				<div className="flex flex-wrap text-lg text-gray-700 items-end">
 					<Link href="/projects">
-						<a className="hover:text-blue-800 active:text-blue-900 focus:text-blue-900 arrow-shift">
+						<a className="home-arrow mr-20 mt-12 sm:mt-20 ">
 							View my Projects
-							<FontAwesomeIcon icon={faChevronRight} className="inline ml-2 w-3 text-yellow-400 arrow"/>
+							<FontAwesomeIcon icon={faChevronRight} className="inline ml-2 w-3 text-m-maize arrow"/>
 						</a>
 					</Link>
 					<Link href="/about">
-						<a className="hover:text-blue-800 active:text-blue-900 focus:text-blue-900 arrow-shift">
+						<a className="home-arrow mr-4 mt-8 sm:mt-20">
 							Learn about me
-							<FontAwesomeIcon icon={faChevronRight} className="inline ml-2 w-3 text-yellow-400 arrow"/>
+							<FontAwesomeIcon icon={faChevronRight} className="inline ml-2 w-3 text-m-maize arrow"/>
 						</a>
 					</Link>
 				</div>

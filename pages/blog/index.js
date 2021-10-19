@@ -23,8 +23,6 @@ export default function Blog({blogPostsInfo}) {
                         ))}
                     </div>
                 </section>
-
-            
             </main>
         </>
     )
