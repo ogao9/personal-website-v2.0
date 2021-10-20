@@ -17,6 +17,7 @@
     "@sanity/client": "^2.21.3",
     "@sanity/image-url": "^1.0.1",
     "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
     "groq": "^2.15.0",
     "next": "11.1.2",
     "next-themes": "0.0.15",

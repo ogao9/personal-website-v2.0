@@ -1,10 +1,9 @@
 
 
-export default function Layout() {
-    return (
-        <div>
-            
-        </div>
-    )
+export default function Layout({ children }) {
+	return (
+		<div className="min-h-screen">
+			{children}
+		</div>
+	)
 }
-

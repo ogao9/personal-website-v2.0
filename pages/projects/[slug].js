@@ -2,31 +2,21 @@ import MetaHead from '../../components/MetaHead';
 import BlockContent from '@sanity/block-content-to-react'
 import { getProjectPaths, getProjectData, urlFor } from "../../lib/sanity";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
-
 
 export default function SingleProjectDetails({projectDetails}) {
     return (
         <>
             <MetaHead title="Oliver Gao | " description="Add a good description later"/>
 
-            <section className="px-12 lg:pl-48 pt-16 mb-20 flex flex-wrap max-w-6xl justify-between">
+            <section className="px-12 lg:pl-48 pt-16 mb-12 flex flex-wrap max-w-6xl justify-between align-baseline">
                     <div>
-                        <h1 className="text-7xl font-semibold mb-3">{projectDetails.title}</h1>
-                        <h3 className="text-lg text-gray-800">Front-end / Back-end / Web Design </h3>
+                        <h1 className="text-5xl font-semibold mb-3">{projectDetails.title}</h1>
+                        <h3 className="text-base text-gray-800">Front-end / Back-end / Web Design </h3>
+                        <h3 className="text-base text-gray-800">Python / Pandas / CSS </h3>
                     </div>
 
                     <div>
-                        <h3 className="text-gray-800 mb-4 ">Technologies</h3>
-                        <p>React</p>
-                        <p>CSS</p>
-                        <p>MongoDB</p>
-                        <p>ExpressJS</p>
-                    </div>
-
-                    <div>
-                        <h3 className="text-gray-800 mb-4 ">Exhibit</h3>
+                        <h3 className="text-gray-700 mb-4 ">Exhibit</h3>
                         <p>Visit Website</p>
                         <p>Github Repository</p>
                     </div>
@@ -40,7 +30,7 @@ export default function SingleProjectDetails({projectDetails}) {
                 />
             </section>
 
-            <section className="px-12 lg:pl-48 pt-16 max-w-6xl">
+            <section className="px-12 lg:pl-48 max-w-6xl">
                 <article className="prose prose-lg dark:prose-dark max-w-full">
                     <BlockContent
                         blocks={projectDetails.body}

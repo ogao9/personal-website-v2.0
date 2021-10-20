@@ -1,13 +1,18 @@
+import { ThemeProvider } from 'next-themes'
 import Layout from '../components/Layout'
 import TopNav from '../components/TopNav'
-import { ThemeProvider } from 'next-themes'
+import Footer from '../components/Footer'
+
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
 		  <TopNav/>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      <Footer/>
     </ThemeProvider>
   )
 }

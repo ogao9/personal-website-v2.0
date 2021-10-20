@@ -18,10 +18,6 @@ export default function BlogPostHeader({postInfo}){
                     <p>{prettyDate(postInfo.publishedAt)}</p>
                 </div>
             </section>
-            
-            <section className="max-w-6xl">
-                <img src={urlFor(postInfo.image).url()} alt="Blog Post Cover" className="w-full h-auto object-cover"/>
-            </section>
         </header>
     )
 }
