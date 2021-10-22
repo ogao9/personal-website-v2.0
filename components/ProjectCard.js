@@ -6,7 +6,7 @@ export default function ProjectCard({projectInfo}) {
     return (
         <Link href={`/projects/${projectInfo.slug}`}>
         <a>
-            <article className="project-card border shadow-sm hover:shadow-lg dark:bg-black-surface dark:border-black-surface">
+            <article className="project-card border shadow-sm hover:opacity-80 dark:bg-black-surface dark:border-black-surface">
                 <section className="relative mb-3 overflow-hidden">
                     <img
                         src={urlFor(projectInfo.image).url()}

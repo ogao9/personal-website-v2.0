@@ -19,7 +19,7 @@ export default function Home({homeData}) {
 					{homeData.subheadline}
 				</h3>
 
-				<div className="flex flex-wrap text-lg text-gray-700 items-end">
+				<div className="flex flex-wrap text-lg text-gray-700 items-center">
 					<Link href="/projects">
 						<a className="home-arrow mr-20 mt-12 sm:mt-20 ">
 							View my Projects

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link';
 import ThemeToggler from './ThemeToggler';
@@ -10,6 +10,12 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 export default function TopNav() {
     const router = useRouter()
     const[open, setOpen] = useState(false);
+
+    useEffect(() => {
+        if (open) {
+          setOpen(!open);
+        }
+    }, [router.asPath]);
 
     return (
         <nav className="md:flex justify-between items-center">

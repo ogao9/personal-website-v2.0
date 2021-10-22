@@ -8,10 +8,10 @@ export default function SinglePost({postInfo}) {
         <>
             <MetaHead title={`${postInfo.title} | Oliver Gao`} description="Write a good description"/>
 
-            <main className="px-12 lg:pl-48 pt-12">
+            <main className="px-8 md:pl-16 lg:pl-48 pt-24">
                 <BlogPostHeader postInfo={postInfo}/>
 
-                <section className=" max-w-4xl">
+                <section className="max-w-4xl">
                     <img
                         src={urlFor(postInfo.image).url()}
                         alt="project cover"

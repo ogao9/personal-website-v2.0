@@ -8,12 +8,12 @@ export default function Projects({projectInfo}) {
         <>
             <MetaHead title="Oliver Gao | Projects" description="A small collection of my projects"/>
 
-            <section className="px-12 lg:pl-48 pt-24">
+            <section className="px-8 md:pl-16 lg:pl-48 py-24">
                 <h1 className="text-7xl font-semibold mb-3">Projects.</h1>
-                <p className="text-lg">A collection of my personal, research, and work projects. Includes write-ups!</p>
+                <p className="text-lg">A collection of my personal, research, and work projects. Click on each project to learn more!</p>
             </section>
 
-            <section className="px-12 lg:pl-32 mt-36">
+            <section className="px-12 lg:pl-32">
                 <ProjectCardGrid projectInfo={projectInfo}/>
             </section>
         </>
@@ -22,7 +22,7 @@ export default function Projects({projectInfo}) {
 
 function ProjectCardGrid({projectInfo}){
     return(
-        <section className="project-card-container">
+        <section className="project-card-container max-w-7xl">
             {
                 projectInfo.map((project, idx)=>(
                     <ProjectCard key={idx} projectInfo={project}/>

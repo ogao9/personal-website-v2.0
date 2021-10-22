@@ -7,7 +7,7 @@ export default function BlogHomeStrip({postInfo}){
         <div className="flex items-center justify-between mb-8 max-w-2xl">
             <div className="flex-initial mr-4">
                 <h1 className="text-lg sm:text-xl font-bold">{postInfo.title}</h1>
-                <h3 className="text-sm sm:text-base">{postInfo.excerpt}</h3>
+                <h3 className="hidden sm:block text-sm sm:text-base">{postInfo.excerpt}</h3>
 
                 <section className="flex text-xs sm:text-sm text-gray-700 dark:text-gray-50 mt-2">
                     <p>{prettyDate(postInfo.publishedAt)} &middot;&nbsp;</p>
