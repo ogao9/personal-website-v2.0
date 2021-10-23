@@ -22,13 +22,27 @@ module.exports = {
         'darkmodebg' : '#121212',
         'darkmodetext': "#DEDEDE",
         'blacktext' : "#212121",
-      }
+         'blacksurface': "#242424",
+      },
+      typography: (theme) => ({
+        dark: {
+          css: {
+            color: '#DEDEDE',
+            h1: {color: '#DEDEDE'},
+            h2: {color: '#DEDEDE'},
+            h3: {color: '#DEDEDE'},
+            h4: {color: '#DEDEDE'},
+            strong: {color: '#DEDEDE'},
+          },
+        },
+      }),
     },
   },
   variants: {
     extend: {
       textColor: ['active'],
     },
+    typography: ['dark'],
   },
   plugins: [
     require('@tailwindcss/forms'),

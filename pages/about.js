@@ -12,7 +12,7 @@ export default function About({aboutData}) {
         <>
             <MetaHead title="Oliver Gao | About"/>
 
-            <main className="px-8 sm:pl-16 lg:pl-48 pt-24 mb-8">
+            <main className="px-8 sm:pl-16 lg:pl-48 pt-24 pb-12">
                 <h1 className="text-7xl font-semibold mb-16">About me.</h1>
 
                 <div className="lg:flex flex-wrap">

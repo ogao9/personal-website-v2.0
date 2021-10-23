@@ -8,7 +8,7 @@ export default function Blog({blogPostsInfo}) {
         <>
             <MetaHead title="Oliver Gao | Blog" description="A place where I share a small collection of my thoughts and ideas"/>
 
-            <main className="px-8 sm:pl-16 lg:pl-48 pt-24">
+            <main className="px-6 sm:pl-16 lg:pl-48 pt-24 pb-8">
                 <section className="mb-20">
                     <h1 className="text-6xl md:text-7xl font-semibold mb-3">Oliver's Blog.</h1>
                     <h3 className="text-lg">A small collection of my thoughts and ideas.</h3>

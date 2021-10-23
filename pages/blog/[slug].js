@@ -6,20 +6,20 @@ import { getPostData, getPostPaths, urlFor } from "../../lib/sanity";
 export default function SinglePost({postInfo}) {
     return (
         <>
-            <MetaHead title={`${postInfo.title} | Oliver Gao`} description="Write a good description"/>
+            <MetaHead title={`${postInfo.title}`} description={`${postInfo.excerpt}`}/>
 
-            <main className="px-8 md:pl-16 lg:pl-48 pt-24">
+            <main className="px-8 md:pl-16 lg:pl-48 pt-24 pb-12">
                 <BlogPostHeader postInfo={postInfo}/>
 
-                <section className="max-w-4xl">
+                <section className="max-w-3xl">
                     <img
                         src={urlFor(postInfo.image).url()}
-                        alt="project cover"
-                        className="w-full h-auto object-cover"
+                        alt="Blog post cover"
+                        className="w-full h-auto object-cover overflow-hidden "
                     />
                 </section>
 
-                <section className="max-w-4xl pb-8">
+                <section className="max-w-3xl pb-8">
                     <article className="prose prose-lg dark:prose-dark max-w-full">
                         <BlockContent
                             blocks={postInfo.body}

@@ -10,7 +10,7 @@ export default function Home({homeData}) {
 		<>
 			<MetaHead title="Oliver Gao | Home"/>
 
-			<main className="px-8 sm:pl-16 lg:pl-48 pt-24">
+			<main className="px-6 sm:pl-16 lg:pl-48 pt-24">
 				<h1 className="text-7xl font-semibold mb-16 sm:mb-20">
 					{homeData.headline}
 				</h1>
@@ -27,7 +27,7 @@ export default function Home({homeData}) {
 						</a>
 					</Link>
 					<Link href="/about">
-						<a className="home-arrow mr-4 mt-8 sm:mt-20">
+						<a className="home-arrow mr-4 mt-12 sm:mt-20">
 							Learn about me
 							<FontAwesomeIcon icon={faChevronRight} className="inline ml-2 w-3 text-m-maize arrow"/>
 						</a>
