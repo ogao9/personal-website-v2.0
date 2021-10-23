@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.olivergao.org/</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/projects</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/about</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/blog</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/projects/design-io</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/projects/midas-web-design</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/projects/brawl-stars-tracker</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/projects/renewables-exploration</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/resume.pdf</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/contact</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/blog/how-to-grow-a-plant-in-a-glass-bottle</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.olivergao.org/blog/8-uneventful-yet-rewarding-things-you-should-try</loc>
+  <lastmod>2021-10-23T18:40:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
