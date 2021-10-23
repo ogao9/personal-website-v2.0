@@ -10,9 +10,9 @@ import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 export default function About({aboutData}) {
     return (
         <>
-            <MetaHead title="Oliver Gao | About" description="Write a better description here"/>
+            <MetaHead title="Oliver Gao | About"/>
 
-            <main className="px-8 md:pl-16 lg:pl-48 pt-24 mb-8">
+            <main className="px-8 sm:pl-16 lg:pl-48 pt-24 mb-8">
                 <h1 className="text-7xl font-semibold mb-16">About me.</h1>
 
                 <div className="lg:flex flex-wrap">
@@ -24,20 +24,20 @@ export default function About({aboutData}) {
                         <div className="flex text-lg mb-2 ">
                             <Link href="resume.pdf">
                                 <a target="_blank">
-                                    <p className="mr-6"><FontAwesomeIcon icon={faFileAlt} className="inline w-4 mr-1"/>Resume&nbsp;</p>
+                                    <p className="mr-6 hover:text-m-maize"><FontAwesomeIcon icon={faFileAlt} className="inline w-4 mr-1"/>Resume&nbsp;</p>
                                 </a>
                             </Link>
                             <a href="https://github.com/ogao9" className="learn-more" target="_blank" rel="noreferrer">
-                                <p className="mr-6" ><FontAwesomeIcon icon={faGithub} className="inline w-4 mr-1"/>Github</p>
+                                <p className="mr-6 hover:text-m-maize" ><FontAwesomeIcon icon={faGithub} className="inline w-4 mr-1"/>Github</p>
                             </a>
                         </div>
                         <div className="flex text-lg">
                             <a href="https://www.linkedin.com/in/oliver-gao-828682206"className="learn-more" target="_blank" rel="noreferrer">
-                                <p className="mr-6" ><FontAwesomeIcon icon={faLinkedin} className="inline w-4 mr-1"/>LinkedIn</p>
+                                <p className="mr-6 hover:text-m-maize"><FontAwesomeIcon icon={faLinkedin} className="inline w-4 mr-1"/>LinkedIn</p>
                             </a>
                             <Link href='/contact'>
                                 <a className="learn-more">
-                                    <p className="mr-6" ><FontAwesomeIcon icon={faPaperPlane} className="inline w-4 mr-1"/>Contact Me</p>
+                                    <p className="mr-6 hover:text-m-maize"><FontAwesomeIcon icon={faPaperPlane} className="inline w-4 mr-1"/>Contact Me</p>
                                 </a>
                             </Link>
                         </div>

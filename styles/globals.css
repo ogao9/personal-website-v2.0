@@ -5,13 +5,16 @@
 
 @layer components {
     .home-arrow{
-        @apply hover:text-m-blue active:text-m-blue focus:text-m-blue hover:opacity-80;
+        @apply dark:text-darkmodetext hover:text-m-blue active:text-m-blue focus:text-m-blue hover:opacity-80;
     }
     .top-nav-link{
-        @apply block mx-8 py-4 text-center text-lg;
+        @apply block text-center text-lg text-gray-700 dark:text-darkmodetext border-b border-gray-300 md:border-0 dark:hover:text-gray-500 hover:text-blacktext py-5 md:py-4 mx-8;
     }
     .activeLink{
-        @apply border-b-2 border-blue-500;
+        @apply md:border-b-2 md:border-m-maize;
+    }
+    .logo{
+        @apply bg-black text-darkmodetext dark:bg-white dark:text-blacktext dark:hover:bg-m-maize hover:bg-m-maize hover:text-gray-800;
     }
 }
 
@@ -34,7 +37,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 350px;
-    grid-gap: 0.25rem;
     margin-bottom: 1rem;
 }
 

@@ -18,11 +18,11 @@ export default function TopNav() {
     }, [router.asPath]);
 
     return (
-        <nav className="md:flex justify-between items-center">
+        <nav className="md:flex justify-between items-center dark:bg-darkmodebg dark:text-darkmodetext">
             <div className="md:flex items-center">
                 <div className="flex justify-between items-center">
                     <Link href="/">
-                        <a id="logo" className="block bg-black hover:bg-m-blue text-white tracking-widest text-3xl px-6 py-4 mr-4">
+                        <a className="logo block text-3xl tracking-widest px-6 py-4 mr-4 transition">
                             OliverGao
                         </a>
                     </Link>
@@ -54,7 +54,7 @@ export default function TopNav() {
                 </Link>
             </div>
 
-            <div className="hidden p-6 px-8 md:block">
+            <div className="hidden py-4 px-8 md:block">
                 <ThemeToggler/>
             </div>
         </nav>

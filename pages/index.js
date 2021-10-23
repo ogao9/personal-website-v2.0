@@ -8,18 +8,18 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 export default function Home({homeData}) {
 	return (
 		<>
-			<MetaHead title="Oliver Gao | Home" description="Write a good description here"/>
+			<MetaHead title="Oliver Gao | Home"/>
 
-			<main className="px-8 md:pl-16 lg:pl-48 pt-24">
+			<main className="px-8 sm:pl-16 lg:pl-48 pt-24">
 				<h1 className="text-7xl font-semibold mb-16 sm:mb-20">
 					{homeData.headline}
 				</h1>
 
-				<h3 className="my-4 text-xl max-w-sm">
+				<h3 className="text-xl max-w-sm my-4">
 					{homeData.subheadline}
 				</h3>
 
-				<div className="flex flex-wrap text-lg text-gray-700 items-center">
+				<div className="flex flex-wrap items-center text-lg text-gray-700">
 					<Link href="/projects">
 						<a className="home-arrow mr-20 mt-12 sm:mt-20 ">
 							View my Projects

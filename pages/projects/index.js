@@ -1,4 +1,3 @@
-import Image from "next/image"
 import MetaHead from "../../components/MetaHead"
 import ProjectCard from "../../components/ProjectCard"
 import { getAllProjects } from "../../lib/sanity"
@@ -6,14 +5,14 @@ import { getAllProjects } from "../../lib/sanity"
 export default function Projects({projectInfo}) {
     return (
         <>
-            <MetaHead title="Oliver Gao | Projects" description="A small collection of my projects"/>
+            <MetaHead title="Oliver Gao | Projects" description="A collection of my personal, research, and work projects."/>
 
-            <section className="px-8 md:pl-16 lg:pl-48 py-24">
+            <section className="px-8 sm:pl-16 lg:pl-48 py-24">
                 <h1 className="text-7xl font-semibold mb-3">Projects.</h1>
                 <p className="text-lg">A collection of my personal, research, and work projects. Click on each project to learn more!</p>
             </section>
 
-            <section className="px-12 lg:pl-32">
+            <section className="px-8 sm:pl-16 lg:pl-32">
                 <ProjectCardGrid projectInfo={projectInfo}/>
             </section>
         </>

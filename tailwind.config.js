@@ -19,6 +19,9 @@ module.exports = {
       colors: {
         'm-blue' : '#081e3e ',
         'm-maize' : '#FFCB1F',
+        'darkmodebg' : '#121212',
+        'darkmodetext': "#DEDEDE",
+        'blacktext' : "#212121",
       }
     },
   },
